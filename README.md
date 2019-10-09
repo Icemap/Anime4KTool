@@ -24,9 +24,8 @@ ImageIO.write(img, "png", new File(testResPath + "gintama-2x.png"));
 - GIF
 ~~~[java]
 ConvertGif convertGif = new ConvertGif(20);
-        String testResPath = this.getClass().getResource("/").getPath();
-        convertGif.gifTo4K(new FileInputStream(new File(testResPath + "sakura.gif")), testResPath + "sakura-2x.gif");
-        convertGif.gifTo4K(new FileInputStream(new File(testResPath + "hamster.gif")), testResPath + "hamster-2x.gif");
+String testResPath = this.getClass().getResource("/").getPath();
+convertGif.gifTo4K(new FileInputStream(new File(testResPath + "sakura.gif")), testResPath + "sakura-2x.gif");
 ~~~
 
 - You can see usage in unit case also.
