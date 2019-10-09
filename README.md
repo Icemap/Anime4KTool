@@ -28,4 +28,4 @@ String testResPath = this.getClass().getResource("/").getPath();
 convertGif.gifTo4K(new FileInputStream(new File(testResPath + "sakura.gif")), testResPath + "sakura-2x.gif");
 ~~~
 
-- You can see usage in unit case also.
+- You can see usage in unit case, too.
